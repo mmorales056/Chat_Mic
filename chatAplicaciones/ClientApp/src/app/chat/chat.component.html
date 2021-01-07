@@ -1,0 +1,19 @@
+<div class="col-md-12 fixed-bottom">
+    <div class="chat-window">
+        <div class="app-mensajes">
+            <div *ngFor="let coment of comentarios" [ngClass]="{ 'text-right': coment.idUsuario == IdUsuario  }">
+                <span class="badge " [ngClass]="{ 'badge-primary': coment.idUsuario == IdUsuario ,
+                                                'badge-success': coment.idUsuario != IdUsuario}">
+                    {{ coment.usuario }}</span>
+                <p>
+                    {{ coment.comentario }}
+                </p>
+            </div>
+
+        </div>
+        <input type="text" class="form-control" name="users" id="userlist" style="font-size: 10px;">
+                
+        <input [(ngModel)]='mensaje' type="text" name="mensaje" class="form-control" (keyup.enter)="enviar_mensaje()"
+            placeholder="Enviar mensaje">
+    </div>
+</div>

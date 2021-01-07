@@ -32,6 +32,10 @@ namespace chatAplicaciones.Controllers
                 {
                     await _context.Chat_tblDocumento.FromSqlRaw($"exec [dbo].[sp_ChatAplicacion] @Accion= 'InsertDocuments', @IdRowCab = {response[0].IdRows}, @Documento = '{documento}' ").ToListAsync();
                 }
+                foreach(var user in datos.Usuarios)
+                {
+                    await _context.Usuarios.FromSqlRaw($"exec [dbo].[sp_ChatAplicacion] @Accion= 'AddEmails', @IdRowCab={Convert.ToInt32(response[0].IdRows)}, @Usuario={user} ").ToListAsync();
+                }
 
                 return Ok(
                     response
@@ -74,7 +78,7 @@ namespace chatAplicaciones.Controllers
                     var Addtemp = await _context.Document.FromSqlRaw($"[dbo].[sp_ChatAplicacion] @Accion= 'DocumentsTemp',@Documento='{documento}' ").ToListAsync();
                 }
 
-               response = await _context.ComentsDTO.FromSqlRaw($"exec [dbo].[sp_ChatAplicacion] @Accion= 'ObtenerDatos', @IdAplicacion= {coment.IdAplicacion}").ToListAsync();
+               response = await _context.ComentsDTO.FromSqlRaw($"exec [dbo].[sp_ChatAplicacion] @Accion= 'ObtenerDatos', @IdAplicacion= {coment.IdAplicacion} , @Usuario={coment.IdUsuario}").ToListAsync();
             }
             catch (Exception ex)
             {

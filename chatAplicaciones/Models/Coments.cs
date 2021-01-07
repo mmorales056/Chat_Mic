@@ -9,5 +9,6 @@ namespace chatAplicaciones.Models
     {
         public List<string> Documento { get; set; }
         public int IdAplicacion { get; set; }
+        public int IdUsuario { get; set; }
     }
 }

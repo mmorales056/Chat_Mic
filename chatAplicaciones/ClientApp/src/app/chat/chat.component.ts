@@ -32,14 +32,15 @@ export class ChatComponent implements OnInit {
     this.IdAplicacion=parseInt(this.activateRoute.snapshot.params.IdAplicacion);
     this.IdUsuario =parseInt(this.activateRoute.snapshot.params.Usuario);    
     this.GetEmails();
+
     let object = {
       Documento:this.documentos,
-      IdAplicacion:parseInt(this.IdAplicacion)
+      IdAplicacion:parseInt(this.IdAplicacion),
+      IdUsuario: this.IdUsuario
     }
 
      this.http.post("https://localhost:44389/api/ChatAplicaciones/GetComments",object).subscribe(obj=>{
-        this.comentarios=obj;
-        console.log(this.comentarios);
+        this.comentarios=obj;        
         
     },error=>console.log(error))
   }
@@ -49,19 +50,25 @@ export class ChatComponent implements OnInit {
   }
 
   enviar_mensaje(){
-    console.log(this.comentarios)
     if(Object.entries(this.comentarios).length == 0){
+      let usuarios = $('#userlist').val().split(',')      
+      let IdUsuarios = []
+      for (let index = 0; index < usuarios.length; index++) {
+        IdUsuarios.push(parseInt(usuarios[index].replace(/[^0-9]/g,"")))
+      }            
+      IdUsuarios.push(this.IdUsuario);      
       let object={
         IdAplicacion:this.IdAplicacion,
         Documentos: this.documentos,
+        Usuarios: IdUsuarios,
         IdUsuario: this.IdUsuario,
         Comentario: this.mensaje
-      }      
-      this.http.post("https://localhost:44389/api/ChatAplicaciones",object).subscribe(data=>{
-          console.log(data);
+      }                  
+      this.http.post("https://localhost:44389/api/ChatAplicaciones",object).subscribe(data=>{          
           let obj ={
             Documento:this.documentos,
-            IdAplicacion: this.IdAplicacion
+            IdAplicacion: this.IdAplicacion,
+            IdUsuario: this.IdUsuario
           }
           this.http.post("https://localhost:44389/api/ChatAplicaciones/GetComments",obj).subscribe(data=>{
               this.comentarios= data;
@@ -77,7 +84,8 @@ export class ChatComponent implements OnInit {
         console.log(data);
         let objComent={
             Documento:this.documentos,
-            IdAplicacion: this.IdAplicacion
+            IdAplicacion: this.IdAplicacion,
+            IdUsuario: this.IdUsuario
         };
         this.http.post("https://localhost:44389/api/ChatAplicaciones/GetComments",objComent).subscribe(data=>{
           this.comentarios=data;
@@ -86,8 +94,9 @@ export class ChatComponent implements OnInit {
       },error=>console.log(error));      
     }
     this.mensaje="";
-    console.log('Hola', $("#userlist").val());
-    
+    $('#userlist').val('')
+
+
   }
   
 

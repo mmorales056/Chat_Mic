@@ -31,4 +31,11 @@ namespace chatAplicaciones.Models
         public int IdUsuario { get; set; }
     }
 
+    public class DocumentsExist
+    {
+
+        [Key]
+        public int IdRow { get; set; }
+    }
+
 }

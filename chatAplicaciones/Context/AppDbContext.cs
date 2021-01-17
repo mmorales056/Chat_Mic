@@ -16,6 +16,8 @@ namespace chatAplicaciones.Context
         public DbSet<Documentos> Document { get; set; } 
         public DbSet<Usuarios> Usuarios { get; set; }
         public DbSet<EmailsDto> Emails { get; set; }
+        public DbSet<Permission> Permission { get; set; }
+        public DbSet<DocumentsExist> Exists { get; set; }
 
     }
     

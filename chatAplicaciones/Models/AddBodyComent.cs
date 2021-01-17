@@ -10,5 +10,6 @@ namespace chatAplicaciones.Models
         public int IdRowCabecera { get; set; }
         public int IdUsuario { get; set; }
         public string Comentario { get; set; }
+        public int Permisos { get; set; }
     }
 }

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chatAplicaciones", "chatAplicaciones\chatAplicaciones.csproj", "{DA0D139B-2CC0-4AF8-B565-F38721D5C25B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "chatAplicaciones", "chatAplicaciones\chatAplicaciones.csproj", "{DA0D139B-2CC0-4AF8-B565-F38721D5C25B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chat.WebSocketConsole", "Chat.WebSocketConsole\Chat.WebSocketConsole.csproj", "{7B0A6CFC-8515-4089-A1D1-E55F65BE85CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DA0D139B-2CC0-4AF8-B565-F38721D5C25B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA0D139B-2CC0-4AF8-B565-F38721D5C25B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA0D139B-2CC0-4AF8-B565-F38721D5C25B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B0A6CFC-8515-4089-A1D1-E55F65BE85CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B0A6CFC-8515-4089-A1D1-E55F65BE85CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B0A6CFC-8515-4089-A1D1-E55F65BE85CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B0A6CFC-8515-4089-A1D1-E55F65BE85CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,6 @@
+E:\Mateo\Desarrollo\chatAplicaciones\Chat.WebSocketConsole\bin\Debug\Chat.WebSocketConsole.exe.config
+E:\Mateo\Desarrollo\chatAplicaciones\Chat.WebSocketConsole\bin\Debug\Chat.WebSocketConsole.exe
+E:\Mateo\Desarrollo\chatAplicaciones\Chat.WebSocketConsole\bin\Debug\Chat.WebSocketConsole.pdb
+E:\Mateo\Desarrollo\chatAplicaciones\Chat.WebSocketConsole\obj\Debug\Chat.WebSocketConsole.csprojAssemblyReference.cache
+E:\Mateo\Desarrollo\chatAplicaciones\Chat.WebSocketConsole\obj\Debug\Chat.WebSocketConsole.exe
+E:\Mateo\Desarrollo\chatAplicaciones\Chat.WebSocketConsole\obj\Debug\Chat.WebSocketConsole.pdb

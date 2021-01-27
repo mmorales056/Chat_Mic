@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url: "https://localhost:44389/api/ChatAplicaciones/"
+  url: "http://miclocal.com.co:9330/api/ChatAplicaciones/"
 };
 
 /*

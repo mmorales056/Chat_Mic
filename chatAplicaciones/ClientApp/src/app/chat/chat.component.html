@@ -1,9 +1,14 @@
+<div class="container">
+    <div *ngFor="let c of ComentariosArray">
+        user {{c.usuario}}
+        coment {{c.comentario}}
+    </div>
+</div>
 <div class="col-md-12 fixed-bottom">
     <div class="chat-window">
         <div *ngIf="comentarios || comentarios == null" class="app-mensajes">
-            <div  *ngFor="let coment of comentarios" [ngClass]="{ 'text-right': coment.idUsuario == IdUsuario  }">
-                <span class="badge " [ngClass]="{ 'badge-primary': coment.idUsuario == IdUsuario ,
-                                                'badge-success': coment.idUsuario != IdUsuario}">
+            <div  *ngFor="let coment of comentarios; index as i " [ngClass]="{ 'text-right': coment.idUsuario == IdUsuario  }">
+                <span class="badge " [ngStyle]="{ 'background-color': setColor(i)}" style="color: white;">
                     {{ coment.usuario }}</span>
                 <p>
                     {{ coment.comentario }}

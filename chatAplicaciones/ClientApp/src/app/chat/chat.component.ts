@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Comentario } from '../Interfaces/Coment';
 import { ChatService } from '../Services/chat.service';
 declare var $: any;
 @Component({
@@ -13,11 +14,13 @@ export class ChatComponent implements OnInit {
   IdAplicacion: any;
   IdUsuario: any;
   documentos: string[] = [];
-  comentarios: any;
+  comentarios: Comentario[] = [];
+  coloresUsuarios: { IdUsuario: number, Color: string }[] = [];
   mensaje: string = "";
   UsersEmail: any;
+  IdRowCabecera: number;
   estado: any;
-
+  ComentariosArray: Comentario[] = [];
   // documentos = {"": []};
   constructor(private activateRoute: ActivatedRoute, private http: HttpClient, private service: ChatService) {
     //Llenamos el arreglo de documentos con el primer documento
@@ -31,25 +34,72 @@ export class ChatComponent implements OnInit {
       IdUsuario: this.IdUsuario
     }
     //HAcemos la peticion a GetComments
-    service.GetComentarios(object).subscribe(data => {      
-      this.comentarios = data;
-      console.log("coment ",this.comentarios);
+    debugger
+    service.GetComentarios(object).subscribe((data: Comentario[]) => {
+      debugger
+      console.log(data);
+      if (data != null) {
+        data.forEach(element => {
+          let newObj = new Comentario();
+          newObj.idRows = element.idRows;
+          newObj.idRowsCabecera = element.idRowsCabecera;
+          newObj.fechaCreacion = element.fechaCreacion;
+          newObj.aplicacion = element.aplicacion;
+          newObj.usuario = element.usuario;
+          newObj.idUsuario = element.idUsuario;
+          newObj.comentario = element.comentario;
+          newObj.fechaComentario = element.fechaComentario;
+          this.comentarios.push(newObj);
+          if (this.IdRowCabecera == undefined) {
+            this.IdRowCabecera = element.idRowsCabecera;
+          }
+          if (this.coloresUsuarios.some(color => color.IdUsuario === element.idUsuario)) {
+            console.log('hola');
+            return
+          } else {
+            this.coloresUsuarios.push({ IdUsuario: element.idUsuario, Color: this.getRandomColor() })
+          }
+        });
+      }
+      console.log("Cab", this.IdRowCabecera);
+      console.log("coment ", this.comentarios);
     }, error => console.log(error));
+    console.log('colores', this.coloresUsuarios);
   }
 
   ngOnInit() {
+    this.service.retrieveMappedObject()
+      .subscribe((receivedObj: Comentario) => {
+        console.log("init ", receivedObj)
+        this.addToInbox(receivedObj);
+      });  // calls the service method to get the new messages sent
 
   }
 
+  addToInbox(obj: Comentario) {
+    let newObj = new Comentario();
+    newObj.idRows = obj.idRows;
+    newObj.idRowsCabecera = obj.idRowsCabecera;
+    newObj.aplicacion = obj.aplicacion;
+    newObj.fechaCreacion = obj.fechaCreacion;
+    newObj.usuario = obj.usuario;
+    newObj.idUsuario = obj.idUsuario;
+    newObj.email = obj.email;
+    newObj.comentario = obj.comentario;
+    newObj.fechaComentario = obj.fechaComentario;
+    this.comentarios.push(newObj);
+    console.log('observable: ', newObj);
+  }
+
   enviar_mensaje() {    
-    if (this.comentarios==null) {
+    if (this.comentarios.length == 0) {
       let usuarios = $('#userlist').val().split(',')
       let IdUsuarios = []
       for (let index = 0; index < usuarios.length; index++) {
         IdUsuarios.push(parseInt(usuarios[index].replace(/[^0-9]/g, "")))
       }
       IdUsuarios.push(this.IdUsuario);
-      debugger
+
       //body para la cabecera
       let object = {
         IdAplicacion: this.IdAplicacion,
@@ -66,48 +116,61 @@ export class ChatComponent implements OnInit {
       }
 
       this.service.CrearCabeceraComentario(object).subscribe(() => {
-        this.service.GetComentarios(obj).subscribe((data) => {
-          this.comentarios = data;
+        this.service.GetComentarios(obj).subscribe((data: Comentario[]) => {
+          if(data != null){
+            data.forEach(element => {
+              let newObj = new Comentario();
+              newObj.idRows = element.idRows;
+              newObj.idRowsCabecera = element.idRowsCabecera;
+              newObj.fechaCreacion = element.fechaCreacion;
+              newObj.aplicacion = element.aplicacion;
+              newObj.usuario = element.usuario;
+              newObj.idUsuario = element.idUsuario;
+              newObj.comentario = element.comentario;
+              newObj.fechaComentario = element.fechaComentario;              
+              this.comentarios.push(newObj);
+              if (this.IdRowCabecera == undefined) {
+                this.IdRowCabecera = element.idRowsCabecera;
+              }
+              if (this.coloresUsuarios.some(color => color.IdUsuario === element.idUsuario)) {
+                console.log('hola');
+                return
+              } else {
+                this.coloresUsuarios.push({ IdUsuario: element.idUsuario, Color: this.getRandomColor() })
+              } 
+            });
+            debugger
+            console.log('hola', {IdRowCabecera: this.IdRowCabecera,users: IdUsuarios});
+            this.service.EnviarCorreos({IdRowCabecera: this.IdRowCabecera,users: IdUsuarios}).subscribe(e=>{
+              console.log(e);
+            });         
+          }
+          console.log(this.IdRowCabecera)
+          
         }, error => console.log(error));
       }, error => console.log(error))
-      
+
       this.mensaje = "";
-          $('#userlist').val('')
+      var x =document.getElementById("userlist");
+      x.innerHTML = '';
     }
     else {
-      let objComent = {
-        Documento: this.documentos,
-        IdAplicacion: this.IdAplicacion,
-        IdUsuario: this.IdUsuario
-      };
-      this.service.GetComentarios(objComent).subscribe(data=>{
-        this.comentarios= data;
-        let obj = {
-          IdRowCabecera: parseInt(this.comentarios[0].idRowsCabecera),
-          IdUsuario: this.IdUsuario,
-          Comentario: this.mensaje,
-          Permisos: 1
-        }
-        this.service.ResponderComentario(obj).subscribe(()=>{
-          this.mensaje = "";
-          $('#userlist').val('')
-          this.service.GetComentarios(objComent).subscribe(data=>{
-            this.comentarios= data;
-          },error=>console.log(error));                
-        }, error => console.log(error))  
 
-      },error=>console.log(error)); 
-
-
-      
-          
+      let obj = {
+        IdRowCabecera: this.IdRowCabecera,
+        IdUsuario: this.IdUsuario,
+        Comentario: this.mensaje,
+        Permisos: 1
+      }
+      this.service.Responder(obj);
+      this.mensaje = ''      
     }
-    
+
   }
 
 
   GetEmails() {
-    this.http.post("https://localhost:44389/api/ChatAplicaciones/GetEmails", { IdAplicacion: this.IdAplicacion }).subscribe(data => {
+    this.http.post("http://miclocal.com.co:9330/api/ChatAplicaciones/GetEmails", { IdAplicacion: this.IdAplicacion }).subscribe(data => {
       this.UsersEmail = data;
       let emails = new Array()
       this.UsersEmail.forEach(element => {
@@ -136,6 +199,26 @@ export class ChatComponent implements OnInit {
     this.IdAplicacion = parseInt(this.activateRoute.snapshot.params.IdAplicacion);
     //Obtenemos el IdUSuario
     this.IdUsuario = parseInt(this.activateRoute.snapshot.params.Usuario);
+  }
+
+  getRandomColor() {
+    var length = 6;
+    var chars = '0123456789ABCDEF';
+    var hex = '#';
+    while (length--) hex += chars[(Math.random() * 16) | 0];
+    return hex;
+  }
+
+  setColor(index){
+    let usuario = this.comentarios[index].idUsuario;
+    let col='';
+    this.coloresUsuarios.filter(color=>{
+      if (color.IdUsuario == usuario){
+        col= color.Color;
+      }
+    })
+    console.log(col);
+    return col
   }
 
 

@@ -1,0 +1,101 @@
+E:\MiCompra\Reglas\obj\Debug\Reglas.csprojAssemblyReference.cache
+E:\MiCompra\Reglas\obj\Debug\Reglas.csproj.CoreCompileInputs.cache
+E:\MiCompra\Reglas\bin\Debug\Reglas.dll
+E:\MiCompra\Reglas\bin\Debug\Reglas.pdb
+E:\MiCompra\Reglas\bin\Debug\Datos.dll
+E:\MiCompra\Reglas\bin\Debug\Entidades.dll
+E:\MiCompra\Reglas\bin\Debug\Datos.pdb
+E:\MiCompra\Reglas\bin\Debug\Entidades.pdb
+E:\MiCompra\Reglas\obj\Debug\Reglas.csproj.CopyComplete
+E:\MiCompra\Reglas\obj\Debug\Reglas.dll
+E:\MiCompra\Reglas\obj\Debug\Reglas.pdb
+E:\MiCompra - copia\Reglas\bin\Debug\Reglas.dll
+E:\MiCompra - copia\Reglas\bin\Debug\Reglas.pdb
+E:\MiCompra - copia\Reglas\bin\Debug\Datos.dll
+E:\MiCompra - copia\Reglas\bin\Debug\Entidades.dll
+E:\MiCompra - copia\Reglas\bin\Debug\Datos.pdb
+E:\MiCompra - copia\Reglas\bin\Debug\Entidades.pdb
+E:\MiCompra - copia\Reglas\obj\Debug\Reglas.csprojAssemblyReference.cache
+E:\MiCompra - copia\Reglas\obj\Debug\Reglas.csproj.CoreCompileInputs.cache
+E:\MiCompra - copia\Reglas\obj\Debug\Reglas.csproj.CopyComplete
+E:\MiCompra - copia\Reglas\obj\Debug\Reglas.dll
+E:\MiCompra - copia\Reglas\obj\Debug\Reglas.pdb
+E:\MiCompra6\Reglas\bin\Debug\Reglas.dll.config
+E:\MiCompra6\Reglas\bin\Debug\Reglas.dll
+E:\MiCompra6\Reglas\bin\Debug\Reglas.pdb
+E:\MiCompra6\Reglas\bin\Debug\Datos.dll
+E:\MiCompra6\Reglas\bin\Debug\Entidades.dll
+E:\MiCompra6\Reglas\bin\Debug\EPPlus.Core.dll
+E:\MiCompra6\Reglas\bin\Debug\EPPlus.Core.Extensions.dll
+E:\MiCompra6\Reglas\bin\Debug\EPPlus.Extensions.dll
+E:\MiCompra6\Reglas\bin\Debug\EPPlusEnumerable.dll
+E:\MiCompra6\Reglas\bin\Debug\System.ComponentModel.Annotations.dll
+E:\MiCompra6\Reglas\bin\Debug\System.Drawing.Common.dll
+E:\MiCompra6\Reglas\bin\Debug\Datos.pdb
+E:\MiCompra6\Reglas\bin\Debug\Entidades.pdb
+E:\MiCompra6\Reglas\bin\Debug\EPPlus.Core.xml
+E:\MiCompra6\Reglas\bin\Debug\EPPlus.Core.Extensions.xml
+E:\MiCompra6\Reglas\obj\Debug\Reglas.csprojAssemblyReference.cache
+E:\MiCompra6\Reglas\obj\Debug\Reglas.csproj.CoreCompileInputs.cache
+E:\MiCompra6\Reglas\obj\Debug\Reglas.csproj.CopyComplete
+E:\MiCompra6\Reglas\obj\Debug\Reglas.dll
+E:\MiCompra6\Reglas\obj\Debug\Reglas.pdb
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Debug\Reglas.dll.config
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Debug\Reglas.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Debug\Reglas.pdb
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Debug\Datos.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Debug\Entidades.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Debug\EPPlus.Core.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Debug\EPPlus.Core.Extensions.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Debug\EPPlus.Extensions.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Debug\EPPlusEnumerable.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Debug\System.ComponentModel.Annotations.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Debug\System.Drawing.Common.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Debug\Datos.pdb
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Debug\Entidades.pdb
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Debug\EPPlus.Core.xml
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Debug\EPPlus.Core.Extensions.xml
+E:\ProyectoMiCompra\MiCompra6\Reglas\obj\Debug\Reglas.csproj.CoreCompileInputs.cache
+E:\ProyectoMiCompra\MiCompra6\Reglas\obj\Debug\Reglas.csproj.CopyComplete
+E:\ProyectoMiCompra\MiCompra6\Reglas\obj\Debug\Reglas.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\obj\Debug\Reglas.pdb
+E:\ProyectoMiCompra\MiCompra6\Reglas\obj\Debug\Reglas.csprojAssemblyReference.cache
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Debug\Reglas.dll.config
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Debug\Reglas.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Debug\Reglas.pdb
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Debug\Datos.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Debug\Entidades.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Debug\EPPlus.Core.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Debug\EPPlus.Core.Extensions.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Debug\EPPlus.Extensions.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Debug\EPPlusEnumerable.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Debug\System.ComponentModel.Annotations.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Debug\System.Drawing.Common.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Debug\Datos.pdb
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Debug\Entidades.pdb
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Debug\EPPlus.Core.xml
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Debug\EPPlus.Core.Extensions.xml
+E:\ProyectoMiCompra\MiCompra\Reglas\obj\Debug\Reglas.csprojAssemblyReference.cache
+E:\ProyectoMiCompra\MiCompra\Reglas\obj\Debug\Reglas.csproj.CoreCompileInputs.cache
+E:\ProyectoMiCompra\MiCompra\Reglas\obj\Debug\Reglas.csproj.CopyComplete
+E:\ProyectoMiCompra\MiCompra\Reglas\obj\Debug\Reglas.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\obj\Debug\Reglas.pdb
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\bin\Debug\Reglas.dll.config
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\bin\Debug\Reglas.dll
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\bin\Debug\Reglas.pdb
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\bin\Debug\EPPlus.Core.xml
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\bin\Debug\EPPlus.Core.Extensions.xml
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\obj\Debug\Reglas.csprojAssemblyReference.cache
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\obj\Debug\Reglas.csproj.CoreCompileInputs.cache
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\obj\Debug\Reglas.csproj.CopyComplete
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\obj\Debug\Reglas.dll
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\obj\Debug\Reglas.pdb
+E:\Mateo\Desarrollo\chatAplicaciones\Reglas\bin\Debug\Reglas.dll.config
+E:\Mateo\Desarrollo\chatAplicaciones\Reglas\bin\Debug\Reglas.dll
+E:\Mateo\Desarrollo\chatAplicaciones\Reglas\bin\Debug\Reglas.pdb
+E:\Mateo\Desarrollo\chatAplicaciones\Reglas\bin\Debug\EPPlus.Core.xml
+E:\Mateo\Desarrollo\chatAplicaciones\Reglas\bin\Debug\EPPlus.Core.Extensions.xml
+E:\Mateo\Desarrollo\chatAplicaciones\Reglas\obj\Debug\Reglas.csprojAssemblyReference.cache
+E:\Mateo\Desarrollo\chatAplicaciones\Reglas\obj\Debug\Reglas.csproj.CopyComplete
+E:\Mateo\Desarrollo\chatAplicaciones\Reglas\obj\Debug\Reglas.dll
+E:\Mateo\Desarrollo\chatAplicaciones\Reglas\obj\Debug\Reglas.pdb

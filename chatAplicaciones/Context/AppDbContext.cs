@@ -18,6 +18,23 @@ namespace chatAplicaciones.Context
         public DbSet<EmailsDto> Emails { get; set; }
         public DbSet<Permission> Permission { get; set; }
         public DbSet<DocumentsExist> Exists { get; set; }
+        public DbSet<SendEmailDTO> EnviarEmail { get; set; }
+        public DbSet<GetDocument> obtenerDocumento { get; set; }
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+
+            modelBuilder.Entity<SendEmailDTO>(eb =>
+            {
+                eb.HasNoKey();
+            });
+
+            modelBuilder.Entity<GetDocument>(eb =>
+            {
+                eb.HasNoKey();
+            });
+        }
 
     }
     

@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Threading.Tasks;
 using chatAplicaciones.Context;
+using chatAplicaciones.Hubs;
 using chatAplicaciones.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -15,10 +18,14 @@ namespace chatAplicaciones.Controllers
     public class ChatAplicacionesController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IHubContext<ChatHub> _hubContext;  
         private int estadoPermisos;
-        public ChatAplicacionesController(AppDbContext context)
+        public ChatAplicacionesController(AppDbContext context, IHubContext<ChatHub> hubContext)
         {
+            _hubContext = hubContext;
             _context = context;
+
+            
         }
 
         // POST api/<controller>
@@ -65,6 +72,20 @@ namespace chatAplicaciones.Controllers
                     $"@IdRowCab={bodyComent.IdRowCabecera},  " +
                     $"@Usuario={bodyComent.IdUsuario}, " +
                     $"@Comentario = '{bodyComent.Comentario}'").ToListAsync();
+
+                    
+                   await _hubContext.Clients.All.SendAsync("enviarRespuesta", 
+                       response[0].IdRows, 
+                       response[0].IdRowsCabecera,
+                       response[0].Aplicacion,
+                       response[0].FechaCreacion,
+                       response[0].Usuario,
+                       response[0].IdUsuario,
+                       response[0].Email,
+                       response[0].Comentario,
+                       response[0].FechaComentario
+                       );
+
                     return Ok(response);
                 }else
                 {
@@ -147,18 +168,39 @@ namespace chatAplicaciones.Controllers
             return Ok(response);
         }
 
+        [HttpPost("[action]")]
+        public async Task<ActionResult> EnviarEmail([FromBody] SendEmails email )
+        {
+            Reglas.Mail mail = new Reglas.Mail(); 
+            try
+            {
+                foreach(var id in email.users)
+                {
+                  var response = await _context.EnviarEmail.FromSqlRaw($"exec [dbo].[sp_ChatAplicacion] @Accion= 'EnvioEmail', @IdRowCab= {email.IdRowCabecera}, @Usuario={id}").ToListAsync();
+                    if (!response[0].estado)
+                    {
+                        var documents = await _context.obtenerDocumento.FromSqlRaw($"exec [dbo].[sp_ChatAplicacion] @Accion= 'DocumentosComentario', @IdRowCab= {email.IdRowCabecera}").ToListAsync();
+                        string mensaje = $"<a href='http://localhost:4200/chat/ {response[0].app}/{id}";
+                        foreach(var docu in documents)
+                        {
+                            mensaje += $"/{docu.Documento}";
+                        }
+                        mensaje += "'>Abrir</a>";
+                        mail.EnviarMail(response[0].email, "Nuevo Comentario", mensaje);
+                        response = null;
+                    }
 
-        //public async Task<ActionResult> ValidatePermission([FromBody] UserPermission permission)
-        //{
-        //    try
-        //    {
+                }
 
-        //        return null;
+                return Ok();
 
-        //    }catch(Exception ex)
-        //    {
-        //        return NoContent();
-        //    }
-        //}
+            }
+            catch (Exception ex)
+            {
+                return NoContent();
+            }
+        }
+
+      
     }
 }

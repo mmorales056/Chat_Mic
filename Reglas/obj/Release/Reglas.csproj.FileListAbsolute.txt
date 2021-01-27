@@ -1,0 +1,90 @@
+E:\MiCompra\Reglas\bin\Release\Reglas.dll
+E:\MiCompra\Reglas\bin\Release\Reglas.pdb
+E:\MiCompra\Reglas\bin\Release\Datos.dll
+E:\MiCompra\Reglas\bin\Release\Entidades.dll
+E:\MiCompra\Reglas\bin\Release\Datos.pdb
+E:\MiCompra\Reglas\bin\Release\Entidades.pdb
+E:\MiCompra\Reglas\obj\Release\Reglas.csprojAssemblyReference.cache
+E:\MiCompra\Reglas\obj\Release\Reglas.csproj.CoreCompileInputs.cache
+E:\MiCompra\Reglas\obj\Release\Reglas.csproj.CopyComplete
+E:\MiCompra\Reglas\obj\Release\Reglas.dll
+E:\MiCompra\Reglas\obj\Release\Reglas.pdb
+E:\MiCompra6\Reglas\bin\Release\Reglas.dll
+E:\MiCompra6\Reglas\bin\Release\Reglas.pdb
+E:\MiCompra6\Reglas\bin\Release\Datos.dll
+E:\MiCompra6\Reglas\bin\Release\Entidades.dll
+E:\MiCompra6\Reglas\bin\Release\Datos.pdb
+E:\MiCompra6\Reglas\bin\Release\Entidades.pdb
+E:\MiCompra6\Reglas\obj\Release\Reglas.csprojAssemblyReference.cache
+E:\MiCompra6\Reglas\obj\Release\Reglas.csproj.CoreCompileInputs.cache
+E:\MiCompra6\Reglas\obj\Release\Reglas.csproj.CopyComplete
+E:\MiCompra6\Reglas\obj\Release\Reglas.dll
+E:\MiCompra6\Reglas\obj\Release\Reglas.pdb
+E:\MiCompra6\Reglas\bin\Release\Reglas.dll.config
+E:\MiCompra6\Reglas\bin\Release\EPPlus.Core.dll
+E:\MiCompra6\Reglas\bin\Release\EPPlus.Core.Extensions.dll
+E:\MiCompra6\Reglas\bin\Release\EPPlus.Extensions.dll
+E:\MiCompra6\Reglas\bin\Release\EPPlusEnumerable.dll
+E:\MiCompra6\Reglas\bin\Release\System.ComponentModel.Annotations.dll
+E:\MiCompra6\Reglas\bin\Release\System.Drawing.Common.dll
+E:\MiCompra6\Reglas\bin\Release\EPPlus.Core.xml
+E:\MiCompra6\Reglas\bin\Release\EPPlus.Core.Extensions.xml
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Release\Reglas.dll.config
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Release\Reglas.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Release\Reglas.pdb
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Release\Datos.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Release\Entidades.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Release\EPPlus.Core.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Release\EPPlus.Core.Extensions.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Release\EPPlus.Extensions.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Release\EPPlusEnumerable.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Release\System.ComponentModel.Annotations.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Release\System.Drawing.Common.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Release\Datos.pdb
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Release\Entidades.pdb
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Release\EPPlus.Core.xml
+E:\ProyectoMiCompra\MiCompra6\Reglas\bin\Release\EPPlus.Core.Extensions.xml
+E:\ProyectoMiCompra\MiCompra6\Reglas\obj\Release\Reglas.csprojAssemblyReference.cache
+E:\ProyectoMiCompra\MiCompra6\Reglas\obj\Release\Reglas.csproj.CoreCompileInputs.cache
+E:\ProyectoMiCompra\MiCompra6\Reglas\obj\Release\Reglas.csproj.CopyComplete
+E:\ProyectoMiCompra\MiCompra6\Reglas\obj\Release\Reglas.dll
+E:\ProyectoMiCompra\MiCompra6\Reglas\obj\Release\Reglas.pdb
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Release\Reglas.dll.config
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Release\Reglas.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Release\Reglas.pdb
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Release\Datos.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Release\Entidades.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Release\EPPlus.Core.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Release\EPPlus.Core.Extensions.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Release\EPPlus.Extensions.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Release\EPPlusEnumerable.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Release\System.ComponentModel.Annotations.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Release\System.Drawing.Common.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Release\Datos.pdb
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Release\Entidades.pdb
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Release\EPPlus.Core.xml
+E:\ProyectoMiCompra\MiCompra\Reglas\bin\Release\EPPlus.Core.Extensions.xml
+E:\ProyectoMiCompra\MiCompra\Reglas\obj\Release\Reglas.csprojAssemblyReference.cache
+E:\ProyectoMiCompra\MiCompra\Reglas\obj\Release\Reglas.csproj.CoreCompileInputs.cache
+E:\ProyectoMiCompra\MiCompra\Reglas\obj\Release\Reglas.csproj.CopyComplete
+E:\ProyectoMiCompra\MiCompra\Reglas\obj\Release\Reglas.dll
+E:\ProyectoMiCompra\MiCompra\Reglas\obj\Release\Reglas.pdb
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\bin\Release\Reglas.dll.config
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\bin\Release\Reglas.dll
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\bin\Release\Reglas.pdb
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\bin\Release\EPPlus.Core.xml
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\bin\Release\EPPlus.Core.Extensions.xml
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\obj\Release\Reglas.csprojAssemblyReference.cache
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\obj\Release\Reglas.csproj.CoreCompileInputs.cache
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\obj\Release\Reglas.csproj.CopyComplete
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\obj\Release\Reglas.dll
+E:\Proyecto Devoluciones\DevolucionesFront\Reglas\obj\Release\Reglas.pdb
+E:\Mateo\Desarrollo\chatAplicaciones\Reglas\bin\Release\Reglas.dll.config
+E:\Mateo\Desarrollo\chatAplicaciones\Reglas\bin\Release\Reglas.dll
+E:\Mateo\Desarrollo\chatAplicaciones\Reglas\bin\Release\Reglas.pdb
+E:\Mateo\Desarrollo\chatAplicaciones\Reglas\bin\Release\EPPlus.Core.xml
+E:\Mateo\Desarrollo\chatAplicaciones\Reglas\bin\Release\EPPlus.Core.Extensions.xml
+E:\Mateo\Desarrollo\chatAplicaciones\Reglas\obj\Release\Reglas.csprojAssemblyReference.cache
+E:\Mateo\Desarrollo\chatAplicaciones\Reglas\obj\Release\Reglas.csproj.CopyComplete
+E:\Mateo\Desarrollo\chatAplicaciones\Reglas\obj\Release\Reglas.dll
+E:\Mateo\Desarrollo\chatAplicaciones\Reglas\obj\Release\Reglas.pdb
